@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Тиняков](https://up.htmlacademy.ru/htmlcss/20/user/156793).
-* Наставник: `Сергей Рубец`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator)
 
 ---
 
