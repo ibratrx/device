@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Девайс - Каталог</title>
   </head>
   <body>
   <header class="main-header">
     <nav class="main-navigation">
+      <a href="index.html" class="header-logo"><img src="" alt="Логотип магазина DEVICE"></a>
       <ul class="user-navigation">
-        <li><input type="search" id="my-search" name="q"
+        <li><input type="search" id="my-search" name="site-search"
          placeholder="Поиск по сайту"
          aria-label="Поиск по сайту"></li>
         <li><a href="#">Войти</a></li>
@@ -16,7 +17,7 @@
         <li><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
-        <li>Каталог товаров
+        <li class="site-navigation-item">Каталог товаров
           <ul>
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы под селфи</a></li>
@@ -26,9 +27,9 @@
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="site-navigation-item"><a href="#">Доставка</a></li>
+        <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+        <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -39,81 +40,81 @@
           <ul>
             <li>
               <article>
-              <img src="http://placehold.it/150x100">
-              <span>01</span>
-              <span><b>Делай селфи,<br>как Бен Стиллер! </b></span>
-              <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a href="#">Подробнее</a>
-              <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
-              <table>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-                <tr>
-                  <th class="visually-hidden">Длинная селфи палка</th>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
-              </table>
+                <img src="http://placehold.it/150x100">
+                <span>01</span>
+                <span><b>Делай селфи,<br>как Бен Стиллер! </b></span>
+                <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a href="#">Подробнее</a>
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <table>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                  <tr>
+                    <th class="visually-hidden">Длинная селфи палка</th>
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                </table>
             </article>
             </li>
             <li>
               <article>
-              <img src="http://placehold.it/150x100">
-              <span>02</span>
-              <span><b>Худеем</br>правильно!</b></span>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#">Подробнее</a>
-              <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
-              <table>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Без подзарядки</td>
-                </tr>
-                <tr>
-                  <th class="visually-hidden">Фитнес-браслет</th>
-                  <td>48 часов</td>
-                </tr>
-              </table>
-            </article>
+                <img src="http://placehold.it/150x100">
+                <span>02</span>
+                <span><b>Худеем</br>правильно!</b></span>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#">Подробнее</a>
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <table>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Без подзарядки</td>
+                  </tr>
+                  <tr>
+                    <th class="visually-hidden">Фитнес-браслет</th>
+                    <td>48 часов</td>
+                  </tr>
+                </table>
+              </article>
             </li>
             <li>
               <article>
-              <img src="http://placehold.it/150x100">
-              <span>03</span>
-              <span><b>Порхает как бабочка,</br>жалит как пчела!!</b></span>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
-              <a href="#">Подробнее</a>
-              <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
-              <table>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-                <tr>
-                  <th class="visually-hidden">Лазерный квадрокоптер</th>
-                  <td>800 м</td>
-                  <td>50 м</td>
-                </tr>
+                <img src="http://placehold.it/150x100">
+                <span>03</span>
+                <span><b>Порхает как бабочка,</br>жалит как пчела!!</b></span>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
+                <a href="#">Подробнее</a>
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <table>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                  <tr>
+                    <th class="visually-hidden">Лазерный квадрокоптер</th>
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
               </table>
-            </article>
+              </article>
             </li>
           </ul>
         </div>
@@ -180,28 +181,23 @@
       <h2 class="visually-hidden">Контактная информация</h2>
       <a href="#"><img src="http://placehold.it/150x100"></a>
       <p>г. Москва, ул. Строителей, 15</p>
-      <nav class="footer-menu">
-
-      </nav>
-      <nav class="footer-site-navigation">
-        <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <ul class="footer-site-navigation">
+        <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
+        <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
+        <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
+      </ul>
       <ul class="footer-social">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagramm</a></li>
-        <li><a href="#">Tweeter</a></li>
+        <li class="footer-social-item"><a href="#">Facebook</a></li>
+        <li class="footer-social-item"><a href="#">Instagramm</a></li>
+        <li class="footer-social-item"><a href="#">Tweeter</a></li>
       </ul>
       <ul class="footer-user-navigation">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="footer-user-navigation-item"><a href="#">Войти</a></li>
+        <li class="footer-user-navigation-item"><a href="#">Сравнить</a></li></a>
+        <li class="footer-user-navigation-item"><a href="#">Корзина</a></li>
       </ul>
       <p>Тел.: +7 (495) 495-95-95</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100"></a>
     </footer>
   </body>
-</html>
+  </html>
