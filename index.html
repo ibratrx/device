@@ -2,19 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс - Каталог</title>
+    <title>HTML Academy: Девайс</title>
   </head>
   <body>
   <header class="main-header">
+    <h1 class="header-logo">DEVICE</h1>
+    <input type="search" id="my-search" name="site-search"
+     placeholder="Поиск по сайту"
+     aria-label="Поиск по сайту">
     <nav class="main-navigation">
-      <a href="index.html" class="header-logo"><img src="" alt="Логотип магазина DEVICE"></a>
       <ul class="user-navigation">
-        <li><input type="search" id="my-search" name="site-search"
-         placeholder="Поиск по сайту"
-         aria-label="Поиск по сайту"></li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="user-navigation-item"><a href="#">Войти</a></li>
+        <li class="user-navigation-item"><a href="#">Сравнить</a></li>
+        <li class="user-navigation-item"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
         <li class="site-navigation-item">Каталог товаров
@@ -34,14 +34,14 @@
     </nav>
   </header>
     <main class="container">
-      <h2 class="visually-hidden">Товары</h2>
       <section class="slider">
+        <h2 class="visually-hidden">Товары</h2>
         <div class="slider-container">
           <ul>
             <li>
                 <img src="http://placehold.it/150x100" alt="Длинная селфи палка">
                 <span>01</span>
-                <span><b>Делай селфи,<br>как Бен Стиллер! </b></span>
+                <span><b>Делай селфи, как Бен Стиллер! </b></span>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a href="#">Подробнее</a>
                 <ul>
@@ -67,10 +67,10 @@
             <li>
                 <img src="http://placehold.it/150x100" alt="Фитнес-браслет">
                 <span>02</span>
-                <span><b>Худеем</br>правильно!</b></span>
+                <span><b>Худеем правильно!</b></span>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a href="#">Подробнее</a>
-                <ul>
+                <ul class="slider-navigation">
                   <li><a href="#"></a></li>
                   <li><a href="#"></a></li>
                   <li><a href="#"></a></li>
@@ -145,7 +145,7 @@
         </ul>
       </section>
       <section class="brands">
-      <h2 class="visually-hidden">Бренды</h2>
+        <h2 class="visually-hidden">Бренды</h2>
         <ul>
           <li><a href="#"><img src="http://placehold.it/150x100" alt=""></a></li>
           <li><a href="#"><img src="http://placehold.it/150x100" alt=""></a></li>
@@ -168,13 +168,13 @@
       <section class="contact">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#"><img src="http://placehold.it/150x100"></a>
+        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
         <a href="#">Напишите нам</a>
-      <section>
+      </section>
     </main>
     <footer class="main-footer">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <a href="#"><img src="http://placehold.it/150x100"></a>
+      <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
       <p>г. Москва, ул. Строителей, 15</p>
       <ul class="footer-site-navigation">
         <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
