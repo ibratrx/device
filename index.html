@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
   <header class="main-header">
@@ -12,12 +13,14 @@
      aria-label="Поиск по сайту">
     <nav class="main-navigation">
       <ul class="user-navigation">
-        <li class="user-navigation-item"><a href="#">Войти</a></li>
-        <li class="user-navigation-item"><a href="#">Сравнить</a></li>
-        <li class="user-navigation-item"><a href="#">Корзина</a></li>
+        <li class="user-navigation-item"><a href="login.html">Войти</a></li>
+        <li class="user-navigation-item"><button type="button">Сравнить</button></li>
+        <li class="user-navigation-item"><button type="button">Корзина</button></li>
       </ul>
       <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a>
+        <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="site-navigation-item">
+          <span>+</span>
           <ul>
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы под селфи</a></li>
@@ -174,7 +177,7 @@
     </main>
     <footer class="main-footer">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+      <a href="#"><img src="img/map.jpg" alt="Карта"></a>
       <p>г. Москва, ул. Строителей, 15</p>
       <ul class="footer-site-navigation">
         <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
@@ -182,9 +185,9 @@
         <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
       <ul class="footer-social">
-        <li class="footer-social-item"><a href="#">Facebook</a></li>
-        <li class="footer-social-item"><a href="#">Instagramm</a></li>
-        <li class="footer-social-item"><a href="#">Tweeter</a></li>
+        <li class="footer-social-item"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="footer-social-item"><a href="#"><span class="visually-hidden">Instagramm</span></a></li>
+        <li class="footer-social-item"><a href="#"><span class="visually-hidden">Tweeter</span></a></li>
       </ul>
       <ul class="footer-user-navigation">
         <li class="footer-user-navigation-item"><a href="#">Войти</a></li>
@@ -192,7 +195,36 @@
         <li class="footer-user-navigation-item"><a href="#">Корзина</a></li>
       </ul>
       <p>Тел.: +7 (495) 495-95-95</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
     </footer>
+
+    <section class="modal contact-us">
+      <h2 class="visually-hidden">Задать вопрос</h2>
+      <p class="visually-hidden">Введите свой логин и пароль.</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="input-name">Ваше имя:</label>
+        <p class="contact-us-item">
+          <input autocomplete="name" autofocus type="text" id="input-name" placeholder="Имя Фамилия" aria-labelledby="label-mail">
+          <label for="input-mail" id="label-mail">Ваш e-mail:</label>
+        </p>
+        <p>
+          <input type="email" id="input-mail" aria-labelledby="label-mail" aria-required="true" required placeholder="example@example.com">
+          <label for="input-text">Текст письма:</label>
+        </p>
+        <p>
+          <input type="text" id="input-text" placeholder="В свободной форме">
+          <button type="submit">Отправить</button>
+        </p>
+      </form>
+      <button type="button" class="modal-close">x</button>
+    </section>
+
+    <section class="modal modal-map" hidden>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" alt="г. Москва, ул. Строителей, 15">
+      </p>
+      <button type="button" class="modal-close">x</button>
+    </section>
   </body>
   </html>
