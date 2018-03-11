@@ -14,8 +14,8 @@
     <nav class="main-navigation">
       <ul class="user-navigation">
         <li class="user-navigation-item"><a href="login.html">Войти</a></li>
-        <li class="user-navigation-item"><a href="#"></a>Сравнить</a></li>
-        <li class="user-navigation-item"><a href="#"></a>Корзина</a></li>
+        <li class="user-navigation-item"><a href="#">Сравнить</a></li>
+        <li class="user-navigation-item"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
@@ -212,9 +212,10 @@
           <label for="input-text">Текст письма:</label>
         </p>
         <p>
-          <input type="text" id="input-text" placeholder="В свободной форме">
-          <button type="submit">Отправить</button>
+          <label for="input-text">Текст письма</label>
+          <textarea name="input-text" id="input-text" rows="" cols="">В свободной форме</textarea>
         </p>
+      <button type="submit">Отправить</button>
       </form>
       <button type="button" class="modal-close">x</button>
     </section>
