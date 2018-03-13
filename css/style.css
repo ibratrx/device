@@ -1,3 +1,54 @@
+@font-face {
+    font-family: "gilroyextrabold";
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilroylight";
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open_sanslight";
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open_sansregular";
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+  text-decoration-color: inherit;
+  color: rgba(0,0,0,1);
+}
+a:hover {
+  color: rgba(0,0,0,0.6);
+}
+a:active {
+  color: rgba(0,0,0,0.3);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -7,4 +58,18 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.main-header {
+  background-color: #f7e296;
+}
+
+.user-navigation, .site-navigation, .catalog-list, .services-list, .brands-list, .delivery-list, .footer-site-navigation, .footer-social, .footer-user-navigation{
+  list-style: none;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+.main-footer {
+  background-color: #464646;
 }

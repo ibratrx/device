@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
@@ -21,7 +22,7 @@
         <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="site-navigation-item">
           <button type="button">+</button>
-          <ul>
+          <ul class="catalog-list">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы под селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -40,7 +41,7 @@
       <section class="slider">
         <h2 class="visually-hidden">Товары</h2>
         <div class="slider-container">
-          <ul>
+          <ul class="catalog-list">
             <li>
                 <img src="img/slider-1.jpg" alt="Длинная селфи палка">
                 <span>01</span>
@@ -118,29 +119,29 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul>
-          <li><a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность"><h3 class="visually-hidden"> Виртуальная реальность</h3></a></li>
-          <li><a href="#"><img src="img/popular-2.svg" alt="Моноподы под селфи"><h3 class="visually-hidden">Моноподы под селфи</h3></a></li>
-          <li><a href="#"><img src="img/popular-3.svg" alt="Экшн-камеры"><h3 class="visually-hidden">Экшн-камеры</h3></a></li>
-          <li><a href="#"><img src="img/popular-4.svg" alt="Фитнес-браслеты<"><h3 class="visually-hidden"> Фитнес-браслеты</h3></a></li>
-          <li><a href="#"><img src="img/popular-5.svg" alt="Умные часы"><h3 class="visually-hidden"> Умные часы</h3></a></li>
-          <li><a href="#"><img src="img/poppular-6.svg" alt="Квадрокоптеры"><h3 class="visually-hidden">Квадрокоптеры</h3></a></li>
+        <ul class="catalog-list">
+          <li class="catalog-item"><a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность"><h3 class="visually-hidden"> Виртуальная реальность</h3></a></li>
+          <li class="catalog-item"><a href="#"><img src="img/popular-2.svg" alt="Моноподы под селфи"><h3 class="visually-hidden">Моноподы под селфи</h3></a></li>
+          <li class="catalog-item"><a href="#"><img src="img/popular-3.svg" alt="Экшн-камеры"><h3 class="visually-hidden">Экшн-камеры</h3></a></li>
+          <li class="catalog-item"><a href="#"><img src="img/popular-4.svg" alt="Фитнес-браслеты<"><h3 class="visually-hidden"> Фитнес-браслеты</h3></a></li>
+          <li class="catalog-item"><a href="#"><img src="img/popular-5.svg" alt="Умные часы"><h3 class="visually-hidden"> Умные часы</h3></a></li>
+          <li class="catalog-item"><a href="#"><img src="img/poppular-6.svg" alt="Квадрокоптеры"><h3 class="visually-hidden">Квадрокоптеры</h3></a></li>
         </ul>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
-        <ul>
-          <li>Доставка
+        <ul class="services-list">
+          <li>
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <img src="http://placehold.it/150x100" alt="Доставка">
           </li>
-          <li>Гарантия
+          <li>
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
             <img src="http://placehold.it/150x100" alt="Гарантия">
           </li>
-          <li>Кредит
+          <li>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             <img src="http://placehold.it/150x100" alt="Кредит">
@@ -149,11 +150,11 @@
       </section>
       <section class="brands">
         <h2 class="visually-hidden">Бренды</h2>
-        <ul>
-          <li><a href="#"><img src="http://placehold.it/150x100" alt=""></a></li>
-          <li><a href="#"><img src="http://placehold.it/150x100" alt=""></a></li>
-          <li><a href="#"><img src="http://placehold.it/150x100" alt=""></a></li>
-          <li><a href="#"><img src="http://placehold.it/150x100" alt=""></a></li>
+        <ul class="brands-list">
+          <li><a href="#"><img src="img/logo-1.jpg" alt="DJI"></a></li>
+          <li><a href="#"><img src="img/logo-2.jpg" alt=""></a></li>
+          <li><a href="#"><img src="img/logo-3.jpg" alt=""></a></li>
+          <li><a href="#"><img src="img/logo-4.jpg" alt=""></a></li>
         </ul>
       </section>
       <section class="info">
@@ -161,7 +162,7 @@
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
         <h3 class="visually-hidden">Транспортные комании</h3>
-        <ul>
+        <ul class="delivery-list">
             <li><a href="#">Деловые линии</a></li>
             <li><a href="#">Автотрейдинг</a></li>
             <li><a href="#">ЖелДорЭкспедиция</a></li>
@@ -204,7 +205,7 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="input-name">Ваше имя:</label>
         <p class="contact-us-item">
-          <input autocomplete="name" autofocus type="text" id="input-name" placeholder="Имя Фамилия" aria-labelledby="label-mail">
+          <input autocomplete="name" type="text" id="input-name" placeholder="Имя Фамилия" aria-labelledby="label-mail">
           <label for="input-mail" id="label-mail">Ваш e-mail:</label>
         </p>
         <p>
