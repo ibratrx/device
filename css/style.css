@@ -59,10 +59,14 @@ a:active {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .main-header {
   background-color: #f7e296;
+  background-repeat:
 }
-
+input[type="search"]::before{
+  content: url("../img/search.svg");
+}
 .user-navigation, .site-navigation, .catalog-list, .services-list, .brands-list, .delivery-list, .footer-site-navigation, .footer-social, .footer-user-navigation{
   list-style: none;
 }
@@ -72,4 +76,44 @@ a:active {
 }
 .main-footer {
   background-color: #464646;
+}
+.user-navigation, .description{
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: none;
+}
+.catalog-number {
+  font-size: 35.782px;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1;
+}
+.button {
+  background-color: #f0c52e;
+}
+.brands-list li{
+  filter: grayscale(100%);
+  -webkit-transition: filter 1s ease-in-out;
+  -moz-transition: filter 1s ease-in-out;
+  -ms-transition: filter 1s ease-in-out;
+  -o-transition: filter 1s ease-in-out;
+  transition: filter 1s ease-in-out;
+}
+.brands-list li:hover{
+  filter: none;
+}
+.catalog-item {
+  background-color: rgba(254,205,51,0.5);
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -ms-transition: background-color 1s ease-in-out;
+  -o-transition:background-color  1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  width: 160px;
+  height: 160px;
+}
+.catalog-item:hover {
+  background-color: rgba(254,205,51,1);
 }

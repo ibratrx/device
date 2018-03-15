@@ -3,40 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="main-header">
-    <h1 class="header-logo">device</h1>
-    <input type="search" id="my-search" name="site-search"
-     placeholder="Поиск по сайту"
-     aria-label="Поиск по сайту">
-    <nav class="main-navigation">
-      <ul class="user-navigation">
-        <li class="user-navigation-item"><a href="login.html">Войти</a></li>
-        <li class="user-navigation-item"><a href="#">Сравнить</a></li>
-        <li class="user-navigation-item"><a href="#">Корзина</a></li>
-      </ul>
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="site-navigation-item">
-          <button type="button">+</button>
-          <ul class="catalog-list">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы под селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </li>
-        <li class="site-navigation-item"><a href="#">Доставка</a></li>
-        <li class="site-navigation-item"><a href="#">Гарантия</a></li>
-        <li class="site-navigation-item"><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="main-header">
+      <h1 class="header-logo">device</h1>
+      <input type="search" id="my-search" name="site-search"
+       placeholder="Поиск по сайту"
+       aria-label="Поиск по сайту">
+      <nav class="main-navigation">
+        <ul class="user-navigation">
+          <li class="user-navigation-item"><a href="login.html">Войти</a></li>
+          <li class="user-navigation-item"><a href="#">Сравнить</a></li>
+          <li class="user-navigation-item"><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-navigation-item">
+            <button type="button">+</button>
+            <ul class="catalog-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы под селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li class="site-navigation-item"><a href="#">Доставка</a></li>
+          <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="container">
       <section class="slider">
         <h2 class="visually-hidden">Товары</h2>
@@ -44,10 +44,10 @@
           <ul class="catalog-list">
             <li>
                 <img src="img/slider-1.jpg" alt="Длинная селфи палка">
-                <span>01</span>
+                <span class="catalog-number">01</span>
                 <span><b>Делай селфи, как Бен Стиллер! </b></span>
-                <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a href="#">Подробнее</a>
+                <p class="description">Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a href="#" class="button">Подробнее</a>
                 <ul>
                   <li><a href="#"></a></li>
                   <li><a href="#"></a></li>
@@ -70,10 +70,10 @@
             </li>
             <li>
                 <img src="img/slider-2.jpg" alt="Фитнес-браслет">
-                <span>02</span>
+                <span class="catalog-number">02</span>
                 <span><b>Худеем правильно!</b></span>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a href="#">Подробнее</a>
+                <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#" class="button">Подробнее</a>
                 <ul class="slider-navigation">
                   <li><a href="#"></a></li>
                   <li><a href="#"></a></li>
@@ -92,10 +92,10 @@
             </li>
             <li>
                 <img src="img/slider-3.jpg" alt="Лазерный квадрокоптер">
-                <span>03</span>
+                <span class="catalog-number">03</span>
                 <span><b>Порхает как бабочка,жалит как пчела!!</b></span>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
-                <a href="#">Подробнее</a>
+                <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
+                <a href="#" class="button">Подробнее</a>
                 <ul>
                   <li><a href="#"></a></li>
                   <li><a href="#"></a></li>
@@ -133,17 +133,17 @@
         <ul class="services-list">
           <li>
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <img src="http://placehold.it/150x100" alt="Доставка">
           </li>
           <li>
             <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+            <p class="description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
             <img src="http://placehold.it/150x100" alt="Гарантия">
           </li>
           <li>
             <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <p class="description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             <img src="http://placehold.it/150x100" alt="Кредит">
           </li>
         </ul>
@@ -159,21 +159,21 @@
       </section>
       <section class="info">
         <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
+        <p class="description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
         <h3 class="visually-hidden">Транспортные комании</h3>
         <ul class="delivery-list">
             <li><a href="#">Деловые линии</a></li>
             <li><a href="#">Автотрейдинг</a></li>
             <li><a href="#">ЖелДорЭкспедиция</a></li>
         </ul>
-        <a href="#">Подробнее о нас</a>
+        <a href="#" class="button">Подробнее о нас</a>
       </section>
       <section class="contact">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-        <a href="#">Напишите нам</a>
+        <a href="#" class="button">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
