@@ -21,10 +21,9 @@
           <li class="user-navigation-item"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-navigation-item nav-catalog-expand"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-navigation-item">
-            <button type="button">+</button>
-            <ul class="menu-catalog-list" hidden>
+            <ul class="menu-catalog-list">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы под селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -72,7 +71,7 @@
                 </tr>
               </table>
           </li>
-          <li class="slider-item" hidden>
+          <li class="slider-item">
             <div class="slider-content">
               <img src="img/slider-2.jpg" alt="Фитнес-браслет">
             </div>
@@ -98,7 +97,7 @@
               </table>
             </div>
           </li>
-          <li class="slider-item" hidden>
+          <li class="slider-item">
             <div class="slider-content">
               <img src="img/slider-3.jpg" alt="Лазерный квадрокоптер">
             </div>
@@ -128,15 +127,15 @@
           </li>
         </ul>
       </section>
-      <section class="catalog">
+      <section class="inner-catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item"><a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность"><h3 class="visually-hidden"> Виртуальная реальность</h3></a></li>
-          <li class="catalog-item"><a href="#"><img src="img/popular-2.svg" alt="Моноподы под селфи"><h3 class="visually-hidden">Моноподы под селфи</h3></a></li>
-          <li class="catalog-item"><a href="#"><img src="img/popular-3.svg" alt="Экшн-камеры"><h3 class="visually-hidden">Экшн-камеры</h3></a></li>
-          <li class="catalog-item"><a href="#"><img src="img/popular-4.svg" alt="Фитнес-браслеты<"><h3 class="visually-hidden"> Фитнес-браслеты</h3></a></li>
-          <li class="catalog-item"><a href="#"><img src="img/popular-5.svg" alt="Умные часы"><h3 class="visually-hidden"> Умные часы</h3></a></li>
-          <li class="catalog-item"><a href="#"><img src="img/poppular-6.svg" alt="Квадрокоптеры"><h3 class="visually-hidden">Квадрокоптеры</h3></a></li>
+        <ul class="inner-catalog-list">
+          <li class="catalog-icon"><a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность"><h3 class="visually-hidden"> Виртуальная реальность</h3></a></li>
+          <li class="catalog-icon"><a href="#"><img src="img/popular-2.svg" alt="Моноподы под селфи"><h3 class="visually-hidden">Моноподы под селфи</h3></a></li>
+          <li class="catalog-icon"><a href="#"><img src="img/popular-3.svg" alt="Экшн-камеры"><h3 class="visually-hidden">Экшн-камеры</h3></a></li>
+          <li class="catalog-icon"><a href="#"><img src="img/popular-4.svg" alt="Фитнес-браслеты<"><h3 class="visually-hidden"> Фитнес-браслеты</h3></a></li>
+          <li class="catalog-icon"><a href="#"><img src="img/popular-5.svg" alt="Умные часы"><h3 class="visually-hidden"> Умные часы</h3></a></li>
+          <li class="catalog-icon"><a href="#"><img src="img/poppular-6.svg" alt="Квадрокоптеры"><h3 class="visually-hidden">Квадрокоптеры</h3></a></li>
         </ul>
       </section>
       <section class="services">
@@ -175,9 +174,9 @@
           <p class="description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
           <h3 class="visually-hidden">Транспортные комании</h3>
           <ul class="delivery-list">
-              <li><a href="#">Деловые линии</a></li>
-              <li><a href="#">Автотрейдинг</a></li>
-              <li><a href="#">ЖелДорЭкспедиция</a></li>
+            <li><a href="#">Деловые линии</a></li>
+            <li><a href="#">Автотрейдинг</a></li>
+            <li><a href="#">ЖелДорЭкспедиция</a></li>
           </ul>
           <a href="#" class="button">Подробнее о нас</a>
         </section>
@@ -219,7 +218,7 @@
       </div>
     </footer>
 
-    <section class="modal contact-us" hidden>
+    <section class="modal contact-us">
       <h2 class="visually-hidden">Задать вопрос</h2>
       <p class="visually-hidden">Введите свой логин и пароль.</p>
       <form action="https://echo.htmlacademy.ru" method="post">
