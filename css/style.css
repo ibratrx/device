@@ -72,6 +72,10 @@ a:active {
 
 .header-logo {
   font-size: 48px;
+  letter-spacing: .8px;
+  position: relative;
+  bottom: 12px;
+  left: 57px;
 }
 
 .search {
@@ -80,7 +84,7 @@ a:active {
 }
 
 .search::before {
-  content: url("../img/search.svg");
+  content: url("../catalog/search.svg");
   margin-right: 10px;
   margin-left: 3px;
 }
@@ -167,16 +171,23 @@ a:active {
 }
 /* slider */
 .slider {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
+  margin-top: -112px;
   width: 1160px;
   min-height: 520px;
 }
 
+.slider-catalog {
+  margin: 0;
+  padding: 0;
+}
+
 .slider-item {
   padding: 0;
+  width: 1040px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .slider-content {
@@ -184,18 +195,38 @@ a:active {
 }
 
 .slider-content h3 {
+  width: 410px;
   font-size: 47px;
-  line-height: 57px;
+  line-height: 55px;
+  text-transform: none;
+  letter-spacing: .5px;
+  margin: 0;
+  margin-right: auto;
+}
+
+.slider-content h3::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 8px;
+  color: white;
+}
+
+.slider-content img {
+  padding-left: 30px;
 }
 
 /* catalog */
 .inner-catalog {
+  margin: 0 auto;
+  margin-top: 70px;
   width: 1200px;
 }
 
 .inner-catalog-list {
   list-style: none;
   padding: 0;
+  margin-top: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -211,9 +242,26 @@ a:active {
   height: 160px;
 }
 
+.catalog-icon a {
+  display: block;
+  /* width: 160px;
+  min-height: 160px; */
+  padding: auto;
+}
+
+.act-camera {
+  content: url("../img/popular-3.svg");
+}
+
+.catalog-icon img {
+  /* display: block; */
+}
+
 .catalog-icon:hover {
   background-color: rgba(254, 205, 51, 1);
 }
+
+.
 /* services */
 .services {
   background-color: #e5e5e5;
@@ -401,4 +449,8 @@ a:active {
 .pagination-list {
   list-style: none;
   display: flex;
+}
+
+.hide {
+  display: none;
 }
