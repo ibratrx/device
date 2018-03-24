@@ -11,30 +11,42 @@
       <h1 class="header-logo">device</h1>
       <nav class="main-navigation">
         <ul class="user-navigation">
-          <form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="search" placeholder="Поиск по сайту"
-            aria-label="Поиск по сайту">
-            <button type="submit" class="search-btn"><span>Найти</span></button>
-          </form>
-          <li class="user-navigation-item user"><a href="login.html">Войти</a></li>
-          <li class="user-navigation-item compare"><a href="#">Сравнить</a></li>
-          <li class="user-navigation-item cart"><a href="#">Корзина</a></li>
+          <div class="user-navigation-column">
+            <form class="search" action="https://echo.htmlacademy.ru" method="post">
+              <input type="text" name="search" placeholder="Поиск по сайту"
+              aria-label="Поиск по сайту">
+              <button type="submit" class="search-btn"><span>Найти</span></button>
+            </form>
+          </div>
+          <div class="user-navigation-column">
+            <ul>
+              <li class="user-navigation-item visually-hidden user"><a href="login.html">Валентин Петухов</a></li>
+              <li class="user-navigation-item login"><a href="login.html">Войти</a></li>
+              <li class="user-navigation-item compare"><a href="#">Сравнить</a></li>
+              <li class="user-navigation-item cart"><a href="#">Корзина</a></li>
+            </ul>
+          </div>
         </ul>
         <ul class="site-navigation">
-          <li class="site-navigation-item nav-catalog-expand"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-navigation-item">
-            <ul class="menu-catalog-list">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы под селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+          <div class="site-navigation-column column-1">
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="nav-catalog-expand menu-catalog-list">
+              <li class="column-1"><a href="#">Виртуальная реальность</a></li>
+              <li class="column-1"><a href="#">Моноподы под селфи</a></li>
+              <li class="column-1"><a href="#">Экшн-камеры</a></li>
+              <li class="column-2"><a href="#">Фитнес-браслеты</a></li>
+              <li class="column-2"><a href="#">Фитнес-браслеты</a></li>
+              <li class="column-2"><a href="#">Умные часы</a></li>
+              <li class="column-3"><a href="#">Квадрокоптеры</a></li>
             </ul>
-          </li>
-          <li class="site-navigation-item"><a href="#">Доставка</a></li>
-          <li class="site-navigation-item"><a href="#">Гарантия</a></li>
-          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="site-navigation-column column-2">
+            <ul>
+              <li class="site-navigation-item"><a href="#">Доставка</a></li>
+              <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+              <li class="site-navigation-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
         </ul>
       </nav>
     </header>
@@ -71,7 +83,7 @@
                 </tr>
               </table>
           </li>
-          <li class="slider-item hide">
+          <li class="slider-item is-hidden">
             <div class="slider-content">
               <img src="img/slider-2.jpg" alt="Фитнес-браслет">
             </div>
@@ -97,7 +109,7 @@
               </table>
             </div>
           </li>
-          <li class="slider-item hide">
+          <li class="slider-item is-hidden">
             <div class="slider-content">
               <img src="img/slider-3.jpg" alt="Лазерный квадрокоптер">
             </div>
