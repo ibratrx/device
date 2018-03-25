@@ -249,6 +249,7 @@ a:active {
   font-weight: bold;
   line-height: 1;
   display: inline-block;
+  vertical-align: top;
   position: relative;
   left: 400px;
   top: 60px;
@@ -256,6 +257,7 @@ a:active {
 }
 
 .button {
+  display: block;
   height: 40px;
   line-height: 40px;
   vertical-align: middle;
@@ -349,7 +351,7 @@ a:active {
   border: 2px solid #ccc;
   border-radius: 3px;
   position: relative;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 }
 
@@ -445,8 +447,9 @@ a:active {
 
 .catalog-icon h3 {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
   text-transform: none;
+  margin: 36px 0px;
 }
 
 .popular-1 {
@@ -490,26 +493,73 @@ a:active {
 }
 
 /* services */
-/* body > main > section.services */
+
 .services {
+  margin-top: 265px;
+  position: relative;
+  height: 290px;
   background-color: #e5e5e5;
 }
 
 .services-container {
+  position: absolute;
   display: flex;
   width: 1160px;
-  margin: 0 auto;
-  margin-top: 194px;
-  min-height: 290px;
+  margin-top: -80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .services-list {
+  padding: 0;
   width: 300px;
   display: flex;
   flex-direction: column;
+  margin: auto 0;
+}
+
+.services-list-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 280px;
+  position: relative;
+  height: 320px;
+}
+
+.services-list li {
+  margin-bottom: 25px;
+}
+
+.services-list-menu::after {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 1);
+  height: 320px;
+  width: 8px;
+  position: absolute;
+  right: -4px;
+  top: -20px;
+}
+
+.services-list .button {
+  width: 160px;
+  margin-right: auto;
+}
+
+.services-list .button-active {
+  padding-right: 120px;
+  color: #f7e184;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 1);
+  margin-right: 0;
+  transition: 0s;
 }
 
 .services-description {
+  margin-left: 80px;
   list-style: none;
   width: 800px;
   display: flex;
@@ -531,19 +581,29 @@ a:active {
 
 .services-description .delivery::after {
   content: url("../img/delivery.svg");
+  position: absolute;
+  right: 105px;
+  top: 47px;
 }
 
 .services-description .warranty::after {
   content: url("../img/warranty.svg");
+  position: absolute;
+  right: 105px;
+  top: 47px;
 }
 
 .services-description .credit::after {
   content: url("../img/credit.svg");
+  position: absolute;
+  right: 105px;
+  top: 47px;
 }
 /*  brands*/
 .brands-list {
+  padding: 0;
   width: 1160px;
-  margin: auto;
+  margin: 90px auto;
   display: flex;
   justify-content: space-between;
 }
