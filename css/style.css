@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "gilroyextrabold";
+  font-family: 'gilroyextrabold';
   src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gilroylight";
+  font-family: 'gilroylight';
   src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "open_sanslight";
+  font-family: 'open_sanslight';
   src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "open_sansregular";
+  font-family: 'open_sansregular';
   src: url('../fonts/opensans-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -28,7 +28,7 @@
 
 body {
   margin: auto;
-  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -88,12 +88,12 @@ a:active {
 }
 
 .search::before {
-  content: url("../img/search.svg");
+  content: url('../img/search.svg');
   margin-right: 15px;
   margin-left: 3px;
 }
 
-.search input[type="text"] {
+.search input[type='text'] {
   padding: 0px 0px;
   border: 0px solid transparent;
   width: 320px;
@@ -101,7 +101,7 @@ a:active {
   background-color: inherit;
 }
 
-.search input[type="text"]:focus {
+.search input[type='text']:focus {
   border-bottom: 2px solid rgba(0, 0, 0, 1);
   outline: none;
 }
@@ -119,7 +119,7 @@ a:active {
 }
 
 .user-navigation .login::before {
-  content: url("../img/user.svg");
+  content: url('../img/user.svg');
   margin-right: 15px;
   margin-left: -10px;
 }
@@ -129,12 +129,12 @@ a:active {
 }
 
 .user-navigation .compare::before {
-  content: url("../img/compare.svg");
+  content: url('../img/compare.svg');
   margin-right: 11px;
 }
 
 .user-navigation .cart::before {
-  content: url("../img/cart.svg");
+  content: url('../img/cart.svg');
   margin-right: 10px;
 }
 
@@ -189,7 +189,7 @@ a:active {
 
 .user-navigation,
 .description {
-  font-family: "open_sanslight", Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   text-transform: none;
@@ -204,11 +204,11 @@ a:active {
 }
 
 .site-navigation-column > a::after {
-  content: url("../img/plus.svg");
+  content: url('../img/plus.svg');
 }
 
 .menu-catalog-list {
-  font-family: "open_sanslight", Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
@@ -244,7 +244,7 @@ a:active {
 
 .catalog-number {
   font-size: 35.782px;
-  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1;
@@ -308,7 +308,7 @@ a:active {
 }
 
 .slider-content h3::before {
-  content: "";
+  content: '';
   display: block;
   position: relative;
   top: -35px;
@@ -356,7 +356,7 @@ a:active {
 }
 
 .radio:checked + .radio-custom::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 2px;
@@ -384,7 +384,7 @@ a:active {
 }
 
 .table-row-group {
-  font-family: "gilroylight", "Arial", sans-serif;
+  font-family: 'gilroylight', 'Arial', sans-serif;
   font-size: 36px;
   text-transform: none;
   font-weight: normal;
@@ -392,7 +392,7 @@ a:active {
 }
 
 .table-header-group th {
-  font-family: "opensanslight", "Arial", sans-serif;
+  font-family: 'opensanslight', 'Arial', sans-serif;
   font-size: 13px;
   text-transform: none;
   font-weight: normal;
@@ -534,7 +534,7 @@ a:active {
 }
 
 .services-list-menu::after {
-  content: "";
+  content: '';
   display: block;
   background-color: rgba(0, 0, 0, 1);
   height: 320px;
@@ -549,7 +549,8 @@ a:active {
   margin-right: auto;
 }
 
-.services-list .button-active {
+.services-list .button-active,
+.services-list .button:active {
   padding-right: 120px;
   color: #f7e184;
   background-image: none;
@@ -580,21 +581,21 @@ a:active {
 }
 
 .services-description .delivery::after {
-  content: url("../img/delivery.svg");
+  content: url('../img/delivery.svg');
   position: absolute;
   right: 105px;
   top: 47px;
 }
 
 .services-description .warranty::after {
-  content: url("../img/warranty.svg");
+  content: url('../img/warranty.svg');
   position: absolute;
   right: 105px;
   top: 47px;
 }
 
 .services-description .credit::after {
-  content: url("../img/credit.svg");
+  content: url('../img/credit.svg');
   position: absolute;
   right: 105px;
   top: 47px;
@@ -633,12 +634,28 @@ a:active {
 .contact {
   min-height: 655px;
   width: 560px;
-  margin: 0 20px;
+  margin: 0;
+  position: relative;
 }
 
-.about-us h2 {
+.info-header,
+.contact-header {
   font-size: 47px;
   text-transform: none;
+  margin-top: 65px;
+  margin-bottom: 55px;
+}
+
+.info-header::before,
+.contact-header::before {
+  display: block;
+  content: '';
+  width: 80px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .delivery-container {
@@ -649,6 +666,30 @@ a:active {
   font-size: 16px;
   line-height: 40px;
   text-transform: none;
+  margin-top: 65px;
+  padding-left: 35px;
+  margin-bottom: 55px;
+}
+
+.contact .description {
+  margin-bottom: 38px;
+}
+
+.info .description {
+  margin-bottom: 30px;
+  word-spacing: 1px;
+}
+
+.contact-map {
+  padding-bottom: 65px;
+}
+
+.delivery-container .description {
+  word-spacing: -0.07em;
+}
+
+.about-us .button {
+  width: 260px;
 }
 /* footer */
 .main-footer {
@@ -657,7 +698,7 @@ a:active {
   display: flex;
   justify-content: space-around;
   min-height: 323px;
-  font-family: "open_sanslight", "Arial", sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-size: 15px;
   color: rgba(255, 255, 255, 1);
   text-transform: none;
@@ -665,6 +706,7 @@ a:active {
 
 .footer-container {
   width: 1160px;
+  min-height: 323px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -680,12 +722,22 @@ a:active {
   justify-content: space-around;
 }
 
-.contact-data {
+.footer-section.contact-data {
+  display: flex;
+  flex-direction: column;
   width: 280px;
 }
 
+.footer-address::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: rgba(255, 204, 51, 1);
+}
+
 .footer-logo {
-  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-size: 47px;
   color: rgba(255, 204, 51, 1);
   text-transform: uppercase;
@@ -696,24 +748,24 @@ a:active {
 }
 
 .footer-site-navigation a {
-  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   line-height: 24px;
 }
 
 .facebook {
-  content: url("../img/facebook.svg");
+  content: url('../img/facebook.svg');
   margin-right: 10px;
 }
 
 .instagram {
-  content: url("../img/instagram.svg");
+  content: url('../img/instagram.svg');
   margin-right: 10px;
 }
 
 .twitter {
-  content: url("../img/twitter.svg");
+  content: url('../img/twitter.svg');
 }
 
 .footer-user-navigation {
