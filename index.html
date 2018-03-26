@@ -11,40 +11,44 @@
       <h1 class="header-logo">device</h1>
       <nav class="main-navigation">
         <ul class="user-navigation">
-          <div class="user-navigation-column">
+          <div class="menu-column">
             <form class="search" action="https://echo.htmlacademy.ru" method="post">
               <input type="text" name="search" placeholder="Поиск по сайту"
               aria-label="Поиск по сайту">
               <button type="submit" class="search-btn"><span>Найти</span></button>
             </form>
           </div>
-          <div class="user-navigation-column">
-            <ul>
-              <li class="user-navigation-item visually-hidden user"><a href="login.html">Валентин Петухов</a></li>
-              <li class="user-navigation-item login"><a href="login.html">Войти</a></li>
-              <li class="user-navigation-item compare"><a href="#">Сравнить</a></li>
-              <li class="user-navigation-item cart"><a href="#">Корзина</a></li>
+          <div class="menu-column">
+            <ul class="menu-column-list">
+              <li class="login"><a href="login.html">Войти</a></li>
+              <li class="compare"><a href="#">Сравнить</a></li>
+              <li class="cart"><a href="#">Корзина</a></li>
             </ul>
           </div>
         </ul>
         <ul class="site-navigation">
-          <div class="site-navigation-column column-1">
+          <div class="menu-column column-1">
             <a href="catalog.html">Каталог товаров</a>
-            <ul class="nav-catalog-expand menu-catalog-list">
-              <li class="column-1"><a href="#">Виртуальная реальность</a></li>
-              <li class="column-1"><a href="#">Моноподы под селфи</a></li>
-              <li class="column-1"><a href="#">Экшн-камеры</a></li>
-              <li class="column-2"><a href="#">Фитнес-браслеты</a></li>
-              <li class="column-2"><a href="#">Фитнес-браслеты</a></li>
-              <li class="column-2"><a href="#">Умные часы</a></li>
-              <li class="column-3"><a href="#">Квадрокоптеры</a></li>
-            </ul>
+            <div class="nav-catalog-expand">
+              <ul class="nav-catalog-expand-item">
+                <li class=""><a href="#">Виртуальная реальность</a></li>
+                <li class=""><a href="#">Моноподы под селфи</a></li>
+                <li class=""><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="nav-catalog-expand-item">
+                <li class=""><a href="#">Фитнес-браслеты</a></li>
+                <li class=""><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="nav-catalog-expand-item">
+                <li class=""><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="site-navigation-column column-2">
-            <ul>
-              <li class="site-navigation-item delivery"><a href="#">Доставка</a></li>
-              <li class="site-navigation-item warranty"><a href="#">Гарантия</a></li>
-              <li class="site-navigation-item contacts"><a href="#">Контакты</a></li>
+          <div class="menu-column column-2">
+            <ul class="menu-column-list">
+              <li class="menu-column-item delivery"><a href="#">Доставка</a></li>
+              <li class="menu-column-item warranty"><a href="#">Гарантия</a></li>
+              <li class="menu-column-item contacts"><a href="#">Контакты</a></li>
             </ul>
           </div>
         </ul>
@@ -73,8 +77,6 @@
                     <span class="label"></span>
                     </label>
                   </li>
-                  <!-- <li><input class="radio" type="radio" name="slider-2"><label for="slider-2">слайд 2</label></li>
-                  <li><input class="radio" type="radio" name="slider-3"><label for="slider-3">слайд 3</label></li> -->
                   <li>
                     <label for="slider-2"><span class="visually-hidden">слайд 2</span>
                     <input class="radio" type="radio" name="slider-2">
@@ -216,7 +218,7 @@
         </ul>
       </section>
       <div class="about-us">
-        <section class="info">
+        <section class="about-us-column">
           <h2 class="info-header">О нас</h2>
           <p class="description">Огромный выбор гаджетов не оставит равнодушным гика,</br> который есть в каждом из нас.</p>
           <div class="delivery-container">
@@ -230,7 +232,7 @@
           </div>
           <a href="#" class="button">Подробнее о нас</a>
         </section>
-        <section class="contact">
+        <section class="about-us-column">
           <h2 class="contact-header">Контакты</h2>
           <p class="description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <img class="contact-map"src="img/map.jpg" alt="г. Москва, ул. Строителей, 15">
@@ -240,31 +242,30 @@
     </main>
     <footer class="main-footer">
       <div class="footer-container">
-        <div class="footer-section contact-data">
-          <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="footer-section row-1">
           <span class="footer-logo">device</span>
-          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
-        </div>
-        <div class="footer-section footer-menu">
-          <ul class="footer-site-navigation">
-            <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
-            <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
-            <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="footer-social">
-            <li class="footer-social-item facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
-            <li class="footer-social-item instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
-            <li class="footer-social-item twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
           <ul class="footer-user-navigation">
             <li class="footer-user-navigation-item"><a href="#">Войти</a></li>
             <li class="footer-user-navigation-item"><a href="#">Сравнить</a></li>
             <li class="footer-user-navigation-item"><a href="#">Корзина</a></li>
           </ul>
-          <p>Тел.: +7 (495) 495-95-95</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
+        <div class="footer-section row-2">
+          <span>г. Москва, ул. Строителей, 15</span>
+          <ul class="footer-site-navigation">
+            <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
+            <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
+            <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
+          </ul>
+          <span>Тел.: +7 (495) 495-95-95</span>
+        </div>
+        <div class="footer-section  row-3">
+          <ul class="footer-social">
+            <li class="footer-social-item facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li class="footer-social-item instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+            <li class="footer-social-item twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+          </ul>
+          <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
     </footer>
