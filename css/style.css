@@ -128,6 +128,10 @@ a:active {
   margin-left: 176px;
 }
 
+.catalog-header .compare {
+  margin-left: 0px;
+}
+
 .user-navigation .compare::before {
   content: url('../img/compare.svg');
   margin-right: 11px;
@@ -194,13 +198,21 @@ a:active {
 
 .nav-catalog-expand {
   margin-top: 29px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   text-transform: none;
   letter-spacing: 0.3px;
   width: 552px;
+  transform: translateY(-150px);
+}
+
+.menu-column:hover .nav-catalog-expand {
+  display: flex;
+  transform: translateY(0px);
+  background-color: #f7e296;
+  transition-duration: 0.3s;
 }
 
 .nav-catalog-expand-item {
@@ -220,7 +232,7 @@ a:active {
   min-width: 220px;
 }
 
-.site-navigation-column > a::after {
+.column-1 > a::after {
   content: url('../img/plus.svg');
 }
 
@@ -259,8 +271,9 @@ a:active {
 }
 
 .button:hover {
-  background-color: #f0c52e;
-  transition: 0.3s;
+  /* background-color: #f0c52e; */
+  transition: 1.5s;
+  background-image: linear-gradient(#f0c52e, #f0c52e);
 }
 /* slider */
 .slider {
@@ -671,7 +684,7 @@ a:active {
 }
 
 .contact-map {
-  padding-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .delivery-container .description {
@@ -793,6 +806,95 @@ a:active {
 .footer-user-navigation a {
   color: rgba(255, 255, 255, 1);
 }
+/* modal popup */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -480px;
+  width: 960px;
+  min-height: 555px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.7);
+}
+
+.modal-form {
+  padding-top: 90px;
+  margin: 0 auto;
+  width: 760px;
+  min-height: 400px;
+  text-transform: none;
+}
+
+.modal-close {
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: rgba(240, 197, 46, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  left: 9px;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.form-submit.button {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.modal-form .row-1 {
+  display: flex;
+}
+
+.modal-form .row-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form textarea {
+  outline: transparent;
+  width: 760px;
+  min-height: 150px;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.modal-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-form textarea:focus {
+  background-color: white;
+  border-color: #f7e296;
+}
+
+.contact-us-item {
+  margin: 0;
+  width: 360px;
+}
 /* catalog page */
 .catalog-wrapper {
   display: flex;
@@ -801,51 +903,50 @@ a:active {
 }
 
 .catalog-page {
-  margin: 0 0px;
   display: flex;
   flex-direction: column;
 }
 
 .page-header {
-  min-height: 180px;
-  padding: 0 200px;
-}
-
-.page-header h1 {
-  font-size: 48px;
-  line-height: 47px;
-  /* padding-left: 60px; */
-  text-transform: none;
+  width: 1040px;
+  min-height: 67px;
+  margin: 0 auto;
 }
 
 .breadcrumbs {
   list-style: none;
-  /* padding-left: 60px; */
 }
 
 .catalog {
-  display: flex;
+  /* flex-basis: 830px;*/
+  margin-right: auto;
+  width: calc(760px + 50%);
+  padding-left: 70px;
+  /* display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #ffffff; */
 }
 
 .filter-container {
-  display: flex;
+  width: calc(50% - 200px);
+  padding-right: 70px;
+  margin-left: auto;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; */
 }
 
-.filter-container > h3 {
+/* .filter-container > h3 {
   margin: 0;
   min-height: 70px;
   background-color: #dcdcdc;
   padding-left: 200px;
-}
+} */
 
 .filter {
   display: flex;
   flex-direction: column;
-  padding-left: 200px;
+  /* padding-left: 200px; */
 }
 
 .catalog-sort {
