@@ -896,17 +896,6 @@ a:active {
   width: 360px;
 }
 /* catalog page */
-.catalog-wrapper {
-  display: flex;
-  min-height: 1284px;
-  background-color: #efefef;
-}
-
-.catalog-page {
-  display: flex;
-  flex-direction: column;
-}
-
 .page-header {
   width: 1040px;
   min-height: 67px;
@@ -916,43 +905,32 @@ a:active {
 .breadcrumbs {
   list-style: none;
 }
-
-.catalog {
-  /* flex-basis: 830px;*/
-  margin-right: auto;
-  width: calc(760px + 50%);
-  padding-left: 70px;
-  /* display: flex;
-  flex-direction: column;
-  background-color: #ffffff; */
+/* catalog */
+.catalog-wrapper {
+  min-height: 1284px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .08) 33.3%, transparent 33.3%);
 }
 
 .filter-container {
-  width: calc(50% - 200px);
-  padding-right: 70px;
-  margin-left: auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start; */
+  display: flex;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, .08);
 }
 
-/* .filter-container > h3 {
-  margin: 0;
-  min-height: 70px;
-  background-color: #dcdcdc;
-  padding-left: 200px;
-} */
-
-.filter {
+.catalog-view {
+  width: 1160px;
   display: flex;
-  flex-direction: column;
-  /* padding-left: 200px; */
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .catalog-sort {
+  width: 1160px;
+  padding: 0 20px;
   min-height: 70px;
+  margin: 0 auto;
   display: flex;
-  background-color: #ebebeb;
+  justify-content: space-between;
 }
 
 .catalog-sort ul {
@@ -962,20 +940,56 @@ a:active {
   width: auto;
 }
 
-.catalog-list {
+.filter {
+  width: 200px;
   display: flex;
   flex-direction: column;
+  margin-left: 60px;
+  margin-right: 40px;
 }
+
+.sort {
+  width: 760px;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-view-column.sort {
+  flex-direction: column;
+  /* margin-left: 20px; */
+}
+
+/* .catalog-view-column.filter {
+  margin-left: 60px;
+  margin-right: 40px;
+  width: 200px;
+} */
 
 .catalog-pads {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  /* margin: 70px 0 0; */
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-item {
   width: 360px;
   min-height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-description .item-name {
+  text-transform: none;
+  width: 260px;
 }
 
 .pagination-list {
