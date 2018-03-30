@@ -964,7 +964,7 @@ a:active {
 
 .catalog-wrapper {
   min-height: 1284px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .08) 33.3%, transparent 33.3%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .08) 36.55%, transparent 36.55%);
 }
 
 .filter-container {
@@ -1054,6 +1054,11 @@ a:active {
   margin-right: 40px;
 }
 
+.catalog-view-column.filter {
+  text-transform: none;
+  margin-top: 30px;
+}
+
 .filter-container {
   font-size: 16px;
   line-height: 24px;
@@ -1071,6 +1076,78 @@ a:active {
   /* margin-left: 20px; */
 }
 
+.range-filter {
+  width: 200px;
+}
+
+.range-controls {
+  position: relative;
+  height: 5px;
+  padding-top: 30px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 58%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 115px;
+}
+
+.price-controls {
+  font-size: 0;
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  opacity: 0.2;
+}
+
+.price-controls label {
+  /* display: block; */
+  width: 50%;
+  font-size: 16px;
+  text-transform: none;
+}
+
+.price-controls input {
+  width: 50px;
+  /* padding: 8px 10px;
+  margin-left: 10px; */
+
+  /* font-family: Roboto, Arial, sans-serif;
+  font-size: 16px; */
+
+  text-align: left;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+}
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -1079,6 +1156,19 @@ fieldset {
 
 .filter-option-list {
   list-style: none;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: "opensanslight",Arial,sans-serif;
+}
+
+.filter legend:before {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: #000;
 }
 
 .filter-option-list label {
@@ -1096,8 +1186,25 @@ fieldset {
   background-repeat: no-repeat;
   background-position: left center;
 }
-.filter-input-checkbox:checked+label::before {
-    background-image: url(../img/checkbox-on.svg);
+
+.filter-input-checkbox:checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.filter-input-radio:checked + label::before {
+  background-image: url(../img/radio-on.svg);
 }
 
 .catalog-pads {
@@ -1175,6 +1282,13 @@ fieldset {
   justify-content: space-between;
 }
 
+.form-btn.button {
+  background-color: transparent;
+  border: 0px;
+  width: 200px;
+  text-transform: uppercase;
+}
+
 .pagination-item.pages {
   display: flex;
   list-style: none;
@@ -1183,20 +1297,13 @@ fieldset {
   justify-content: space-between;
 }
 
-.pagination-item {
-  /* margin: 25px 8px 19px 21px; */
-}
-
 .pagination-page-no {
   margin: 0;
   min-width: 40px;
   height: 70px;
   background-color: transparent;
 }
-/* margin: 25px 8px 19px 21px;
 
-
-/* .pagination-item-current, */
 .pagination-page-no button {
   background-color: transparent;
   border: 0px;
