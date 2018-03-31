@@ -57,7 +57,7 @@
       <section class="slider">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="slider-catalog">
-          <li class="slider-item is-hidden">
+          <li class="slider-item item-1">
             <div class="slider-content">
               <img src="img/slider-1.png" alt="Длинная селфи палка">
             </div>
@@ -69,24 +69,19 @@
               <div class="slider-more">
                 <a href="#" class="button">Подробнее</a>
                 <ul class="slider-pagination">
-                  <li>
+                  <li class="switcher">
+                    <input class="slider-input-radio visually-hidden" type="radio" id="slider-1" checked>
                     <label for="slider-1"><span class="visually-hidden">слайд 1</span>
-                    <input class="radio" type="radio" id="slider-1" checked>
-                    <span class="radio-custom"></span>
-                    <span class="label"></span>
+
                     </label>
                   </li>
-                  <li>
-                    <label for="slider-2"><span class="visually-hidden">слайд 2</span>
-                    <input class="radio" type="radio" id="slider-2">
-                    <span class="radio-custom"></span>
-                    </label>
+                  <li class="switcher">
+                    <input class="slider-input-radio visually-hidden" type="radio" id="slider-2">
+                    <label for="slider-2"><span class="visually-hidden">слайд 2</span></label>
                   </li>
-                  <li>
-                    <label for="slider-3"><span class="visually-hidden">слайд 3</span>
-                    <input class="radio" type="radio" id="slider-3">
-                    <span class="radio-custom"></span>
-                    </label>
+                  <li class="switcher">
+                    <input class="slider-input-radio visually-hidden" type="radio" id="slider-3">
+                    <label for="slider-3"><span class="visually-hidden">слайд 3</span></label>
                   </li>
                 </ul>
               </div>
@@ -106,7 +101,7 @@
               </table>
             </div>
           </li>
-          <li class="slider-item is-hidden">
+          <li class="slider-item item-2 is-hidden">
             <div class="slider-content">
               <img src="img/slider-2.png" alt="Фитнес-браслет">
             </div>
@@ -151,13 +146,13 @@
             </div>
           </li>
           </li>
-          <li class="slider-item">
+          <li class="slider-item item-3 is-hidden">
             <div class="slider-content">
               <img src="img/slider-3.png" alt="Лазерный квадрокоптер">
             </div>
             <div class="slider-content">
               <span class="catalog-number">03</span>
-              <h3>Порхает как бабочка,жалит как пчела!!</h3>
+              <h3>Порхает как бабочка, жалит как пчела!!</h3>
               <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
               <div class="slider-more">
                 <a href="#" class="button">Подробнее</a>
@@ -203,28 +198,22 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="inner-catalog-list">
           <li class="catalog-icon">
-            <a class="popular-1" href="#"></a>
-            <h3>Виртуальная реальность</h3>
+            <a class="popular item-1" href="#">Виртуальная реальность</a>
           </li>
           <li class="catalog-icon">
-            <a class="popular-2" href="#"></a>
-            <h3>Моноподы<br> для селфи</h3>
+            <a class="popular item-2" href="#">Моноподы<br> для селфи</a>
           </li>
           <li class="catalog-icon">
-            <a class="popular-3" href="#"></a>
-            <h3>Экшн-камеры</h3>
+            <a class="popular item-3" href="#">Экшн-камеры</a>
           </li>
           <li class="catalog-icon">
-            <a class="popular-4" href="#"></a>
-            <h3>Фитнес-браслеты</h3>
+            <a class="popular item-4" href="#">Фитнес-браслеты</a>
           </li>
           <li class="catalog-icon">
-            <a class="popular-5" href="#"></a>
-            <h3>Умные часы</h3>
+            <a class="popular item-5" href="#">Умные часы</a>
           </li>
           <li class="catalog-icon">
-            <a class="popular-6" href="#"></a>
-            <h3>Квадрокоптеры</h3>
+            <a class="popular item-6" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -301,9 +290,9 @@
         <div class="footer-section row-1">
           <span class="footer-logo">device</span>
           <ul class="footer-user-navigation">
-            <li class="footer-user-navigation-item"><a href="#">Войти</a></li>
-            <li class="footer-user-navigation-item"><a href="#">Сравнить</a></li>
-            <li class="footer-user-navigation-item"><a href="#">Корзина</a></li>
+            <li class="footer-user-navigation-item login"><a href="#">Войти</a></li>
+            <li class="footer-user-navigation-item compare"><a href="#">Сравнить</a></li>
+            <li class="footer-user-navigation-item cart"><a href="#">Корзина</a></li>
           </ul>
         </div>
         <div class="footer-section row-2">
@@ -326,7 +315,6 @@
       </div>
     </footer>
     <section class="modal contact-us is-hidden">
-      <!-- <div class="modal contact-us"> -->
       <h2 class="visually-hidden">Задать вопрос</h2>
       <p class="visually-hidden">Введите свой логин и пароль.</p>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
@@ -346,6 +334,7 @@
         </div>
         <button class="form-submit button" type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal contact-us is-hidden">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473163!2d37.52742931542596!3d55.687034004530695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522180170471"
