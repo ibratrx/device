@@ -66,6 +66,7 @@
       </div>
       <div class="catalog-wrapper">
         <section class="filter-container">
+          <h3 class="visually-hidden">Фильтр</h3>
           <div class="catalog-sort">
             <div class="catalog-sort-column filter"><span>Фильтр:</span></div>
             <div class="catalog-sort-column sort"><span>Сортировка:</span>
@@ -83,8 +84,8 @@
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Каталог</h2>
-          <section class="catalog-view">
-            <form class="catalog-view-column filter" action="https://echo.htmlacademy.ru" method="get">
+          <div class="catalog-view">
+            <form class="catalog-view-column filter" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
                 <div class="range-filter">
@@ -101,6 +102,7 @@
                   </div>
                 </div>
               </fieldset>
+              <fieldset>
                 <legend>Цвет</legend>
                 <ul class="filter-option-list">
                   <li>
@@ -143,31 +145,47 @@
             <div class="catalog-view-column sort">
               <ul class="catalog-pads">
                 <li class="catalog-item">
-                  <img src="img/item-1.jpg" alt="Любительская селфи-палка">
+                  <img src="img/item-1.jpg" alt="Любительская селфи-палка" height="380" width="360">
                   <div class="catalog-item-description">
                     <a href=""><span class="item-name">Любительская селфи-палка</span></a>
                     <span class="item-price">500 руб.</span>
+                    <div class="catalog-item-action">
+                      <a class="button" href="#">В корзину</a>
+                      <a class="compare-item" href="#">Добавить к сравнению</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
-                  <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
+                  <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" height="380" width="360">
                   <div class="catalog-item-description">
                     <a href=""><span class="item-name">Профессиональная<br>селфи-палка</span></a>
                     <span class="item-price">1 500 руб.</span>
+                    <div class="catalog-item-action">
+                      <a class="button" href="#">В корзину</a>
+                      <a class="compare-item" href="#">Добавить к сравнению</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
-                  <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
+                  <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" height="380" width="360">
                   <div class="catalog-item-description">
                     <a href=""><span class="item-name nowrap">Непотопляемая селфи-палка</span></a>
                     <span class="item-price">2 500 руб.</span>
+                    <div class="catalog-item-action">
+                      <a class="button" href="#">В корзину</a>
+                      <a class="compare-item" href="#">Добавить к сравнению</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item new">
-                  <img src="img/item-4.jpg" alt="Селфи-палка "Следуй за мной"">
+                  <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" height="380" width="360">
                   <div class="catalog-item-description">
                     <a href=""><span class="item-name">Селфи-палка «Следуй за<br> мной»</span></a>
                     <span class="item-price">4 900 руб.</span>
+                    <div class="catalog-item-action">
+                      <a class="button" href="#">В корзину</a>
+                      <a class="compare-item" href="#">Добавить к сравнению</a>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -183,7 +201,7 @@
                 <li class="pagination-item pagination-page-no step"><button type="button">Вперед</button></li>
               </ul>
             </div>
-          </section>
+          </div>
         </section>
       </div>
     </main>
