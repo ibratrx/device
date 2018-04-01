@@ -784,7 +784,7 @@ h3 .description:last-child {
 }
 
 .footer-section.row-1 {
-  padding-top: 65px;
+  padding-top: 67px;
   margin-bottom: 13px;
 }
 
@@ -828,7 +828,7 @@ h3 .description:last-child {
   letter-spacing: 3.5px;
   margin-right: 38px;
   position: relative;
-  top: 5px;
+  top: 3px;
 }
 
 .footer-site-navigation a {
@@ -875,6 +875,10 @@ h3 .description:last-child {
 
 .footer-user-navigation-item.compare {
   margin-right: 20px;
+}
+
+.footer-user-navigation-item.index {
+  margin-right: 0px;
 }
 
 li.footer-user-navigation-item.login::before {
@@ -1059,6 +1063,7 @@ li.footer-user-navigation-item.login::before {
   padding: 0;
   font-size: 14px;
   color: #000;
+  opacity: 0.3;
 }
 
 .breadcrumbs-item::after {
@@ -1071,7 +1076,6 @@ li.footer-user-navigation-item.login::before {
   background-color: transparent;
   background-image: url(../img/nav-arrow.svg);
   background-repeat: no-repeat;
-  color: #000;
 }
 
 .breadcrumbs-item.current::after {
@@ -1356,6 +1360,7 @@ fieldset {
 .catalog-item-description .item-name {
   text-transform: none;
   width: 260px;
+  letter-spacing: 0.2px;
 }
 
 .catalog-item-description .item-price {
@@ -1392,6 +1397,7 @@ fieldset {
 }
 
 .pagination-list {
+  margin-top: -11px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -1438,6 +1444,7 @@ fieldset {
   height: 100%;
   cursor: pointer;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .pages .pagination-page-no:not(.pagination-item-current) {
