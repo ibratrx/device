@@ -391,7 +391,7 @@ h3 .description:last-child {
 }
 
 .slider-table {
-  margin-top: 47px;
+  margin-top: 55px;
   width: 460px;
   height: 80px;
   text-align: left;
@@ -411,6 +411,8 @@ h3 .description:last-child {
   text-transform: none;
   font-weight: normal;
   order: 1;
+  vertical-align: bottom;
+  line-height: 35px;
 }
 
 .table-header-group .column-1,
@@ -438,7 +440,7 @@ h3 .description:last-child {
 /* catalog */
 .inner-catalog {
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 75px;
   width: 1160px;
 }
 
@@ -470,7 +472,7 @@ h3 .description:last-child {
 .popular::before {
   content: "";
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   width: 160px;
   height: 160px;
   background-repeat: no-repeat;
@@ -510,7 +512,7 @@ h3 .description:last-child {
 /* services */
 
 .services {
-  margin-top: 265px;
+  margin-top: 260px;
   position: relative;
   height: 290px;
   background-color: #e5e5e5;
@@ -748,10 +750,10 @@ h3 .description:last-child {
 }
 
 .footer-social {
-  margin-right: 55px;
   width: 140px;
   padding: 0;
   margin: 0;
+  margin-right: 55px;
   display: flex;
   justify-content: space-between;
 }
@@ -827,9 +829,11 @@ h3 .description:last-child {
 
 .footer-user-navigation {
   padding: 0;
-  width: 330px;
+  width: 315px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 15px;
 }
 
 .footer-user-navigation-item  a {
@@ -837,10 +841,9 @@ h3 .description:last-child {
 }
 
 li.footer-user-navigation-item.login::before {
-  content: url('../img/user.svg');
+  content: url('../img/footer-user.svg');
   margin-right: 15px;
   margin-left: -10px;
-  color: rgba(255, 204, 51, 1);
 }
 
 .footer-user-navigation-item .compare {
@@ -852,14 +855,12 @@ li.footer-user-navigation-item.login::before {
 }
 
 .footer-user-navigation-item.compare::before {
-  color: rgba(255, 204, 51, 1);
-  content: url('../img/compare.svg');
+  content: url('../img/footer-compare.svg');
   margin-right: 11px;
 }
 
 .footer-user-navigation-item.cart::before {
-  color: rgba(255, 204, 51, 1);
-  content: url('../img/cart.svg');
+  content: url('../img/footer-cart.svg');
   margin-right: 10px;
 }
 /* modal popup */
