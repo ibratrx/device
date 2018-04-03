@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Девайс - Каталог</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header catalog">
@@ -93,8 +93,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <button class="toggle toggle-min"></button>
+                    <button class="toggle toggle-max"></button>
                   </div>
                   <div class="price-controls">
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -190,15 +190,15 @@
                 </li>
               </ul>
               <ul class="pagination-list">
-                <li class="pagination-item pagination-page-no step"><button type="button">Назад</button></li>
+                <li class="step"><a class="">Назад</a></li>
                 <li class="pagination-item">
                   <ul class="pagination-item pages">
-                    <li class="pagination-page-no pagination-item-current"><button type="button">1</button></li>
-                    <li class="pagination-page-no"><button type="button">2</button></li>
-                    <li class="pagination-page-no"><button type="button">3</button></li>
+                    <li class="pagination-page-no pagination-item-current"><a class="page-no">1</a></li>
+                    <li class="pagination-page-no"><a class="page-no">2</a></li>
+                    <li class="pagination-page-no"><a class="page-no">3</a></li>
                   </ul>
                 </li>
-                <li class="pagination-item pagination-page-no step"><button type="button">Вперед</button></li>
+                <li class="step"><a class="">Вперед</a></li>
               </ul>
             </div>
           </div>
@@ -217,13 +217,13 @@
           </ul>
         </div>
         <div class="footer-section row-2">
-          <span>г. Москва, ул. Строителей, 15</span>
+          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
           <ul class="footer-site-navigation">
             <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
             <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
             <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
           </ul>
-          <span>Тел.: +7 (495) 495-95-95</span>
+          <span class="footer-address">Тел.: +7 (495) 495-95-95</span>
         </div>
         <div class="footer-section row-3">
           <ul class="footer-social">
