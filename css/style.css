@@ -77,6 +77,7 @@ a:active {
 }
 
 .search input[type='text'] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 355px;
   height: 48px;
@@ -90,6 +91,18 @@ a:active {
   border: 0;
   border-bottom: 2px solid transparent;
   border-radius: 0;
+}
+
+.search input[type='text']::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
+.search input[type='text']:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+.search input[type='text']::-ms-input-placeholder {
+  opacity: 0.3;
 }
 
 .search input[type='text']::placeholder {
@@ -215,6 +228,7 @@ a:active {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   word-break: break-word;
 }
@@ -611,6 +625,7 @@ h3 .description:last-child {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -627,7 +642,12 @@ h3 .description:last-child {
 }
 
 .catalog-icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
@@ -1124,6 +1144,7 @@ a.academy-link img {
   margin-right: 38px;
   position: relative;
   top: 3px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   word-break: break-all;
 }
@@ -1156,6 +1177,7 @@ a.academy-link img {
   justify-content: space-between;
   position: relative;
   bottom: 15px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1228,30 +1250,63 @@ a.academy-link img {
   display: none;
 }
 
-@keyframes open {
+@-webkit-keyframes open {
   0% {
+    -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
   70% {
+    -webkit-transform: translateY(-60px);
     transform: translateY(-60px);
   }
 
   80% {
+    -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
   90% {
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
   100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes open {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
 .modal-show {
   display: block;
+  -webkit-animation: open 0.6s;
   animation: open 0.6s;
 }
 
@@ -1279,6 +1334,18 @@ a.academy-link img {
   border-radius: 0;
   outline: 0;
   margin-top: 10px;
+}
+
+.modal-form input::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-form input:-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-form input::-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
 }
 
 .modal-form input::placeholder {
@@ -1466,6 +1533,8 @@ a.academy-link img {
 /* catalog */
 
 .catalog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 1287px;
 }
@@ -1497,13 +1566,15 @@ a.academy-link img {
 
 .filter > span {
   width: 200px;
-  margin: auto;
-  margin-right: 70px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-right: 68px;
+  margin-left: auto;
   letter-spacing: 2px;
 }
 
 .sort > span {
-  margin: auto 52px auto 73px;
+  margin: 23px 52px 23px 73px;
   letter-spacing: 2.2px;
 }
 
@@ -1523,6 +1594,7 @@ a.academy-link img {
   font-size: 15px;
   text-transform: none;
   letter-spacing: normal;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   word-break: break-word;
 }
@@ -1535,9 +1607,10 @@ a.academy-link img {
 .catalog-sort-list.arrows {
   width: 45px;
   margin-left: -30px;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 .catalog-sort-item a {
@@ -1605,6 +1678,8 @@ a.academy-link img {
 }
 
 .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: rgba(0, 0, 0, .08);
   min-height: 70px;
@@ -1938,6 +2013,7 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
