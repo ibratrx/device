@@ -13,8 +13,8 @@
         <ul class="user-navigation">
           <li class="menu-column">
             <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту" value="">
+              <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+              <input type="text" id="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту" value="">
               <button type="submit" class="search-btn">Найти</button>
             </form>
           </li>
@@ -185,7 +185,7 @@
             <a class="popular item-1" href="catalog.html">
             <h3>Виртуальная<br> реальность</h3>
             <div class="category-item-image">
-                <img src="img/popular-1.svg" width="" height="" alt="Виртуальная реальность">
+                <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
             </div>
            </a>
           </li>
@@ -193,7 +193,7 @@
             <a class="popular item-2" href="catalog.html">
             <h3>Моноподы<br> для селфи</h3>
             <div class="category-item-image">
-                <img src="img/popular-2.svg" width="" height="" alt="Моноподы для селфи">
+                <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
             </div>
            </a>
           </li>
@@ -217,15 +217,15 @@
             <a class="popular item-5" href="catalog.html">
               <h3>Умные часы</h3>
               <div class="category-item-image">
-                  <img src="img/popular-5.svg" width="" height="" alt="Умные часы">
+                  <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
               </div>
             </a>
           </li>
           <li class="catalog-icon">
-            <a class="popular item-6"href="catalog.html">
+            <a class="popular item-6" href="catalog.html">
               <h3>Квадрокоптеры</h3>
               <div class="category-item-image">
-                  <img src="img/poppular-6.svg" width="" height="" alt="Квадрокоптеры">
+                  <img src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
               </div>
             </a>
           </li>
@@ -304,7 +304,7 @@
         <div class="footer-section row-1">
           <a class="footer-logo">device</a>
           <ul class="footer-user-navigation">
-            <li class="footer-user-navigation-item login"><a href="#">Войти</a></li>
+            <li class="footer-user-navigation-item login"><a href="login.html">Войти</a></li>
             <li class="footer-user-navigation-item index compare"><a href="#">Сравнить</a></li>
             <li class="footer-user-navigation-item cart"><a href="#">Корзина</a></li>
           </ul>
@@ -314,7 +314,7 @@
           <ul class="footer-site-navigation">
             <li class="footer-site-navigation-item"><a href="#">Доставка</a></li>
             <li class="footer-site-navigation-item"><a href="#">Гарантия</a></li>
-            <li class="footer-site-navigation-item"><a href="#">Контакты</a></li>
+            <li class="footer-site-navigation-item contacts"><a href="#">Контакты</a></li>
           </ul>
           <span class="footer-address">Тел.: +7 (495) 495-95-95</span>
         </div>
@@ -325,9 +325,10 @@
             <li class="twitter"><a class="footer-social-item" href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32"><span class="visually-hidden">Twitter</span></a></li>
           </ul>
           <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="34" alt="HTML Academy"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
-    <section class="modal contact-us is-hidden">
+    <section class="modal contact-us">
       <h2 class="visually-hidden">Задать вопрос</h2>
       <p class="visually-hidden">Введите свой логин и пароль.</p>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
@@ -349,11 +350,12 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <section class="modal map is-hidden">
+    <section class="modal map">
       <h2 class="visually-hidden">Карта</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473163!2d37.52742931542596!3d55.687034004530695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522180170471"
         width="960" height="555" allowfullscreen></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

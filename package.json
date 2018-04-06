@@ -1,0 +1,25 @@
+{
+  "name": "156793-device",
+  "version": "1.0.0",
+  "description": "* Студент: [Андрей Тиняков](https://up.htmlacademy.ru/htmlcss/20/user/156793). * Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator)",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atinyakov/156793-device.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atinyakov/156793-device/issues"
+  },
+  "homepage": "https://github.com/atinyakov/156793-device#readme"
+}
