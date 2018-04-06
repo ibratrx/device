@@ -79,8 +79,8 @@
                         <button class="toggle toggle-max"><span class="visually-hidden">Больше</span></button>
                       </div>
                       <div class="price-controls">
-                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                        <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                        <label tabindex="0" class="min-price">от <input name="min-price" type="text" value="0"></label>
+                        <label tabindex="0" class="max-price">до <input name="max-price" type="text" value="5000"></label>
                       </div>
                     </div>
                   </fieldset>
@@ -89,23 +89,23 @@
                     <ul class="filter-option-list">
                       <li>
                         <input class="filter-input-checkbox visually-hidden" type="checkbox" id="color-black" name="color-black" value="black" checked>
-                        <label for="color-black">Черный</label>
+                        <label tabindex="0" for="color-black">Черный</label>
                       </li>
                       <li>
                         <input class="filter-input-checkbox visually-hidden"  type="checkbox" id="color-white" name="color-white" value="white">
-                        <label for="color-white">Белый</label>
+                        <label tabindex="0" for="color-white">Белый</label>
                       </li>
                       <li>
                         <input class="filter-input-checkbox visually-hidden" type="checkbox" id="color-blue" name="color-blue" value="blue" checked>
-                        <label for="color-blue">Синий</label>
+                        <label tabindex="0" for="color-blue">Синий</label>
                       </li>
                       <li>
                         <input class="filter-input-checkbox visually-hidden" type="checkbox" id="color-red" name="color-red" value="red" checked>
-                        <label for="color-red">Красный</label>
+                        <label tabindex="0" for="color-red">Красный</label>
                       </li>
                       <li>
                         <input class="filter-input-checkbox visually-hidden" type="checkbox" id="color-pink" name="color-pink" value="pink">
-                        <label for="color-pink">Розовый</label>
+                        <label tabindex="0" for="color-pink">Розовый</label>
                       </li>
                     </ul>
                   </fieldset>
@@ -114,11 +114,11 @@
                     <ul class="filter-option-list">
                       <li>
                         <input class="filter-input-radio visually-hidden" type="radio" id="filter-bluetooth-yes" name="filter-bluetooth" value="yes" checked>
-                        <label for="filter-bluetooth-yes">Есть</label>
+                        <label tabindex="0" for="filter-bluetooth-yes">Есть</label>
                       </li>
                       <li>
                         <input class="filter-input-radio  visually-hidden" type="radio" id="filter-bluetooth-no" name="filter-bluetooth" value="no">
-                        <label for="filter-bluetooth-no">Нет</label>
+                        <label tabindex="0" for="filter-bluetooth-no">Нет</label>
                       </li>
                     </ul>
                   </fieldset>
@@ -135,7 +135,7 @@
             </ul>
             <ul class="catalog-sort-list arrows">
               <li class="catalog-sort-item down"><a href="#"><span class="visually-hidden">Вниз</span></a></li>
-              <li class="catalog-sort-item up"><a href="#"><span class="visually-hidden">Вверх</span></a></li>
+              <li class="catalog-sort-item up selected"><a href="#"><span class="visually-hidden">Вверх</span></a></li>
             </ul>
 
           </div>
@@ -186,23 +186,23 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="step"><a class="">Назад</a></li>
+            <li class="step"><a tabindex="0" class="">Назад</a></li>
             <li class="pagination-item">
               <ul class="pagination-item pages">
-                <li class="pagination-page-number pagination-item-current"><a class="page-number">1</a></li>
-                <li class="pagination-page-number"><a class="page-number">2</a></li>
-                <li class="pagination-page-number"><a class="page-number">3</a></li>
+                <li class="pagination-page-number pagination-item-current"><a tabindex="0" class="page-number">1</a></li>
+                <li class="pagination-page-number"><a tabindex="0" class="page-number">2</a></li>
+                <li class="pagination-page-number"><a tabindex="0" class="page-number">3</a></li>
               </ul>
             </li>
-            <li class="step"><a class="">Вперед</a></li>
+            <li class="step"><a tabindex="0" class="">Вперед</a></li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer catalog">
       <div class="footer-container">
         <div class="footer-section row-1">
-          <span class="footer-logo">device</span>
+          <a href="index.html" class="footer-logo">device</a>
           <ul class="footer-user-navigation catalog">
             <li class="footer-user-navigation-item login"><a href="login.html">Валентин Петухов</a></li>
             <li class="footer-user-navigation-item login-btn"><a href="#">Выйти</a></li>
