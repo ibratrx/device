@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -58,7 +58,7 @@
       <section class="slider">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="slider-catalog">
-          <li class="slider-item item-1 is-hidden">
+          <li class="slider-item item-1">
             <div class="slider-content">
               <img src="img/slider-1.png" alt="Длинная селфи палка" height="486" width="384">
             </div>
@@ -105,9 +105,9 @@
               <img src="img/slider-2.png" alt="Фитнес-браслет" height="485" width="345">
             </div>
             <div class="slider-content">
-            <span class="catalog-number">02</span>
-            <h3>Худеем<br>правильно!</h3>
-            <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>  непропускать занятия и соблюдать диету.</p>
+              <span class="catalog-number">02</span>
+              <h3>Худеем<br>правильно!</h3>
+              <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>  непропускать занятия и соблюдать диету.</p>
               <div class="slider-more">
                 <a href="#" class="button">Подробнее</a>
                 <ul class="slider-pagination">
@@ -137,7 +137,7 @@
               </table>
             </div>
           </li>
-          <li class="slider-item item-3">
+          <li class="slider-item item-3 is-hidden">
             <div class="slider-content">
               <img src="img/slider-3.png" alt="Лазерный квадрокоптер" height="334" width="526">
             </div>
@@ -183,25 +183,25 @@
         <ul class="inner-catalog-list">
           <li class="catalog-icon">
             <a class="popular item-1" href="catalog.html">
-            <h3>Виртуальная<br> реальность</h3>
-            <div class="category-item-image">
+              <h3>Виртуальная<br> реальность</h3>
+              <div class="category-item-image">
                 <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-            </div>
-           </a>
+              </div>
+            </a>
           </li>
           <li class="catalog-icon">
             <a class="popular item-2" href="catalog.html">
-            <h3>Моноподы<br> для селфи</h3>
-            <div class="category-item-image">
+              <h3>Моноподы<br> для селфи</h3>
+              <div class="category-item-image">
                 <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-            </div>
-           </a>
+              </div>
+            </a>
           </li>
           <li class="catalog-icon">
             <a class="popular item-3" href="catalog.html">
               <h3>Экшн-камеры</h3>
               <div class="category-item-image">
-                  <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
               </div>
             </a>
           </li>
@@ -209,7 +209,7 @@
             <a class="popular item-4" href="catalog.html">
               <h3>Фитнес-браслеты</h3>
               <div class="category-item-image">
-                  <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
               </div>
             </a>
           </li>
@@ -217,7 +217,7 @@
             <a class="popular item-5" href="catalog.html">
               <h3>Умные часы</h3>
               <div class="category-item-image">
-                  <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
               </div>
             </a>
           </li>
@@ -225,7 +225,7 @@
             <a class="popular item-6" href="catalog.html">
               <h3>Квадрокоптеры</h3>
               <div class="category-item-image">
-                  <img src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+                <img src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
               </div>
             </a>
           </li>
@@ -249,7 +249,7 @@
           </div>
           <div class="">
             <ul class="services-description">
-              <li class="delivery is-hidden">
+              <li class="delivery">
                 <h3> Доставка</h3>
                 <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
               </li>
@@ -257,7 +257,7 @@
                 <h3>Гарантия</h3>
                 <p class="description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
               </li>
-              <li class="credit">
+              <li class="credit is-hidden">
                 <h3>Кредит</h3>
                 <p class="description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
               </li>
@@ -356,6 +356,6 @@
         width="960" height="555" allowfullscreen></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

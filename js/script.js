@@ -48,4 +48,15 @@
  } catch (e) {
  }
 
+ window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     popup = document.querySelectorAll('.modal');
+     [].forEach.call(popup, function (el) {
+       if (el.classList.contains("modal-show")) {
+         el.classList.remove("modal-show");
+       }
+     })
+   }
+ });
 }())
