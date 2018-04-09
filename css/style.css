@@ -1,20 +1,34 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'gilroyextrabold';
   font-style: bold;
   font-weight: 700;
-  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'gilroylight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'open_sansregular';
   font-style: normal;
   font-weight: 400;
-  src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/gilroylight-webfont.woff2') format('woff2');
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff');
 }
 
 body {
   margin: auto;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -262,7 +276,7 @@ a:active {
 
 .user-navigation,
 .description {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -275,7 +289,7 @@ a:active {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: none;
@@ -352,7 +366,7 @@ a:active {
 
 .catalog-number {
   font-size: 35.782px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -547,14 +561,15 @@ h3 .description:last-child {
 }
 
 .slider-table {
-  margin-top: 56px;
+  border-collapse: collapse;
+  margin-top: 57px;
   max-width: 460px;
-  height: 80px;
+  height: 78px;
   text-align: left;
 }
 
 .table-row-group {
-  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'gilroylight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 36px;
   text-transform: none;
@@ -566,7 +581,7 @@ h3 .description:last-child {
 }
 
 .table-header-group th {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 13px;
   text-transform: none;
@@ -576,22 +591,22 @@ h3 .description:last-child {
   order: 1;
   vertical-align: bottom;
   line-height: 35px;
+  text-align: left;
 }
 
 .table-header-group .column-1,
 .table-row-group .column-1 {
-  width: 155px;
+  width: 156px;
   position: relative;
-  left: -6px;
 }
 
 .item-3 .column-1 {
-  width: 151px;
+  width: 156px;
 }
 
 .table-header-group .column-2,
 .table-row-group .column-2 {
-  width: 135px;
+  width: 137px;
 }
 
 .table-header-group .column-3,
@@ -607,10 +622,9 @@ h3 .description:last-child {
 /* catalog */
 .catalog.login-btn {
   margin-right: 40px;
-  opacity: 0.6;
 }
 
-.main-footer.catalog .login-btn {
+.catalog.login-btn a {
   opacity: 0.3;
 }
 
@@ -752,7 +766,9 @@ a.popular:active h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 12px;
+  justify-content: space-between;
+  margin: auto 0;
+  height: 170px;
 }
 
 .services-list-menu {
@@ -768,11 +784,6 @@ a.popular:active h3 {
   width: 280px;
   position: relative;
   min-height: 288px;
-}
-
-.services-list li {
-  margin-bottom: 10px;
-  margin-top: 15px;
 }
 
 .services-list-menu::after {
@@ -805,7 +816,6 @@ a.popular:active h3 {
 
 .services-description {
   padding: 0;
-  margin-top: 20px;
   margin-left: 120px;
   list-style: none;
   width: 740px;
@@ -870,13 +880,6 @@ a.popular:active h3 {
 }
 
 .brands-list li {
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: filter 1s ease-in-out;
-  -webkit-transition: -webkit-filter 1s ease-in-out;
-  transition: -webkit-filter 1s ease-in-out;
-  transition: filter 1s ease-in-out;
-  transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out; */
   position: relative;
 }
 
@@ -1020,7 +1023,7 @@ a.brands-link:hover {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   min-height: 323px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   color: rgba(255, 255, 255, 1);
@@ -1095,7 +1098,7 @@ a.academy-link img {
 }
 
 .footer-section.row-1 {
-  padding-top: 67px;
+  padding-top: 65px;
   margin-bottom: 13px;
 }
 
@@ -1118,13 +1121,16 @@ a.academy-link img {
 }
 
 .footer-logo {
-  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 47px;
   color: rgb(255, 204, 51);
   opacity: 1;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+  left: -2px;
+  letter-spacing: 1px;
 }
 
 .footer-logo:hover {
@@ -1140,7 +1146,7 @@ a.academy-link img {
 }
 
 .footer-site-navigation {
-  width: 425px;
+  width: 427px;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -1151,7 +1157,7 @@ a.academy-link img {
   justify-content: space-between;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  margin-right: 38px;
+  margin-right: 37px;
   position: relative;
   top: 3px;
   -ms-flex-wrap: wrap;
@@ -1160,7 +1166,7 @@ a.academy-link img {
 }
 
 .footer-site-navigation a {
-  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
   opacity: 1;
@@ -1198,6 +1204,10 @@ a.academy-link img {
 .footer-user-navigation-item  a {
   opacity: 0.7;
   color: rgb(255, 255, 255);
+}
+
+.footer-user-navigation-item.login-btn a {
+  opacity: 0.3;
 }
 
 .footer-user-navigation-item  a:hover {
@@ -1252,7 +1262,7 @@ a.academy-link img {
   margin-top: -280px;
   margin-left: -480px;
   width: 960px;
-  min-height: 555px;
+  min-height: 553px;
   background-color: rgba(255, 255, 255, 1);
   -webkit-box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.6);
@@ -1294,7 +1304,7 @@ a.academy-link img {
 }
 
 .modal-form {
-  padding-top: 90px;
+  padding-top: 92px;
   margin: 0 auto;
   width: 760px;
   min-height: 400px;
@@ -1307,7 +1317,7 @@ a.academy-link img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 13px 17px;
-  font-family: 'Open Sans',Arial,sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -1316,7 +1326,12 @@ a.academy-link img {
   border: 3px solid #f2f2f2;
   border-radius: 0;
   outline: 0;
-  margin-top: 10px;
+  margin-top: 7px;
+}
+
+.row-2 label {
+  letter-spacing: 0.6px;
+  word-spacing: -1.5px;
 }
 
 .modal-form input::-webkit-input-placeholder {
@@ -1386,7 +1401,7 @@ a.academy-link img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .modal-form .row-2 {
@@ -1433,11 +1448,11 @@ a.academy-link img {
 
 .form-submit.button {
   text-transform: uppercase;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   border: 0;
   background-color: transparent;
   width: 200px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-weight: 700;
 }
 /* catalog page */
@@ -1467,7 +1482,7 @@ a.academy-link img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 13px;
   margin-bottom: 46px;
@@ -1481,7 +1496,7 @@ a.academy-link img {
 }
 
 .breadcrumbs a {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   margin: 0 22px 0 0;
   padding: 0;
@@ -1525,10 +1540,12 @@ a.academy-link img {
 .left-column {
   width: calc(50% - 252px);
   background-color: rgba(0, 0, 0, .08);
+  min-height: 1287px;
 }
 
 .right-column {
   width: calc(252px + 50%);
+  min-height: 1287px;
 }
 
 .catalog-view {
@@ -1572,7 +1589,7 @@ a.academy-link img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: auto;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: none;
@@ -1583,7 +1600,7 @@ a.academy-link img {
 }
 
 .catalog-sort-list.order {
-  margin: 23px 220px 23px 0px;
+  margin: 22px 220px 24px 0px;
   max-width: 320px;
 }
 
@@ -1592,8 +1609,8 @@ a.academy-link img {
   margin-left: -30px;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 24px;
+  margin-bottom: 22px;
 }
 
 .catalog-sort-item a {
@@ -1725,12 +1742,12 @@ a.academy-link img {
 }
 
 .range-controls .toggle:active {
-  border: 7px solid #ffffff;
+  transform: scale(1.1);
 }
 
 .price-controls {
   font-size: 0;
-  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'gilroylight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   opacity: 0.2;
@@ -1767,7 +1784,7 @@ fieldset {
   list-style: none;
   font-size: 14px;
   line-height: 40px;
-  font-family: 'Open Sans',Arial,sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   margin-bottom: -3px;
 }
@@ -1919,7 +1936,7 @@ fieldset {
 .catalog-item-description .item-price {
   margin: 0;
   padding: 0;
-  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'gilroylight', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -1986,7 +2003,7 @@ fieldset {
   width: 200px;
   text-transform: uppercase;
   margin-top: 35px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2076,7 +2093,7 @@ button:focus {
   line-height: 20px;
   color: #000;
   opacity: 0.5;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-weight: 300;
   text-transform: none;
 }
@@ -2139,7 +2156,7 @@ button:focus {
   align-items: center;
   width: 59px;
   height: 59px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
   font-weight: 700;
