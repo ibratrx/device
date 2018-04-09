@@ -28,7 +28,7 @@
 
 body {
   margin: auto;
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -366,7 +366,7 @@ a:active {
 
 .catalog-number {
   font-size: 35.782px;
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -1452,7 +1452,7 @@ a.academy-link img {
   border: 0;
   background-color: transparent;
   width: 200px;
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
 }
 /* catalog page */
@@ -2003,7 +2003,7 @@ fieldset {
   width: 200px;
   text-transform: uppercase;
   margin-top: 35px;
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2156,7 +2156,7 @@ button:focus {
   align-items: center;
   width: 59px;
   height: 59px;
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 14px;
   font-weight: 700;
